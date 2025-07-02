@@ -1,0 +1,352 @@
+:root {
+    --neonblack: #191825;
+
+    /*font-family*/
+    --popin: 'Poppins', sans-serif;
+    --robot: 'Roboto', sans-serif;
+    --fijalla: 'Fjalla One', sans-serif;
+}
+
+.btn-dark {
+    width: 155px;
+    height: 50px;
+    border: 2px solid red;
+    outline: none;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-dark:hover {
+    background-color: rgb(167, 22, 22);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--popin);
+    background: linear-gradient(to right, #1f1c2c, #928dab) !important;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.navbar .navbar-brand {
+    color: darkkhaki;
+    font-size: 2.5rem;
+    font-family: var(--robot);
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: rgb(159, 191, 208);
+    font-size: 18px;
+}
+
+.navbar-toggler {
+    color: aliceblue;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.exp {
+    color: darkkhaki;
+    font-size: 2.5rem;
+    font-family: var(--robot);
+    font-weight: bold;
+}
+
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Sticky Navbar Custom Styling */
+.sticky-navbar {
+    z-index: 1030;
+    /* Above other elements */
+    background-color: #191825 !important;
+    /* Same as your body bg */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: top 0.3s;
+}
+
+
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    /* spacing between cards */
+    padding: 40px 20px;
+}
+
+.project-card {
+    flex: 1 1 calc(30% - 30px);
+    /* roughly 3 per row */
+    max-width: calc(30% - 30px);
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    height: 470px;
+    /* taller height */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 792px) {
+    .project-card {
+        flex: 1 1 calc(45% - 30px);
+        max-width: calc(45% - 30px);
+    }
+}
+
+@media (max-width: 500px) {
+    .project-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.education-section {
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.edu-box {
+    width: 100%;
+    max-width: 500px;
+    min-height: 250px;
+    background: #2c2c54;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.edu-box:hover {
+    transform: rotateY(10deg) rotateX(5deg) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.edu-box h3 {
+    color: #ffda79;
+    margin-bottom: 15px;
+}
+
+.edu-box h4,
+.edu-box h5 {
+    color: #dcdde1;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Skills Section Continuous Slider */
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.slider-track {
+    display: flex;
+    width: max-content;
+    animation: scrollSlider 30s linear infinite;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 120px;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.slide img:hover {
+    transform: scale(1.1);
+}
+
+
+.Contact-section {
+    background: transparent;
+    padding: 60px 20px;
+}
+
+.contact-heading h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ContactInfo .box {
+    background: #26263b;
+    border-radius: 20px;
+    width: 280px;
+    padding: 30px 20px;
+    box-shadow: 10px 10px 30px #12121c, -10px -10px 30px #2e2e45;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    perspective: 1000px;
+}
+
+.ContactInfo .box:hover {
+    transform: translateY(-15px) rotateX(10deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.ContactInfo .icon {
+    font-size: 2.5rem;
+    color: #00ffe7;
+    margin-bottom: 15px;
+}
+
+.ContactInfo .text h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.ContactInfo .text p {
+    font-size: 1rem;
+    color: #ddd;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .ContactInfo .box {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+/* Infinite scroll animation */
+@keyframes scrollSlider {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (max-width:991px) {
+    .navbar .navbar-nav {
+        background-color: rgb(90, 91, 120);
+        border-radius: 20px;
+    }
+
+    .navbar .nav-link {
+        color: white;
+        padding-left: 2rem;
+    }
+}
+
+
+/* Responsive Utilities */
+@media (max-width: 991px) {
+    .hero-section .col-md-6 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .btn-dark {
+        width: 100%;
+        max-width: 180px;
+        margin: auto;
+    }
+
+    .project-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .edu-box {
+        width: 90%;
+    }
+
+    .ContactInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-link {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1.exp {
+        font-size: 2rem;
+    }
+
+    .btn-dark {
+        font-size: 0.9rem;
+        height: 45px;
+    }
+
+    .slider-track {
+        animation-duration: 20s;
+    }
+
+    .slide {
+        width: 90px;
+        height: 90px;
+        margin: 0 10px;
+    }
+
+    .edu-box {
+        padding: 20px;
+    }
+}
