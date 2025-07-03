@@ -36,8 +36,6 @@
         </div>
     </nav>
 
-    <!-- Sections (Home, Experience, Skills, Projects, Education, Contact) -->
-    <!-- Keep your existing content inside each section, no need to change -->
 
     <!--hero section start-->
 
@@ -65,10 +63,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12 col-lg-6 wow animate__animated animate__backInRight">
-                    <!--<img src="image/jay.jpg" class="img-fluid" alt="">-->
-                    <img src="image/jay.jpg" class="img-fluid rounded shadow-lg mx-auto d-block"
-                        style="max-width: 500px;" alt="Jay Tailor">
+                    <img src="image/jay.jpg" class="custom-img img-fluid mx-auto d-block" alt="Jay Tailor">
                 </div>
+
             </div>
         </div>
     </section>
@@ -84,8 +81,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 col-md-6 wow animate__animated animate__backInLeft">
-                    <img src="image/machine.jpg" class="img-fluid rounded shadow-lg mx-auto d-block"
-                        style="max-width: 500px;" alt="">
+                    <div class="image-container text-center">
+                        <img src="image/machine.jpg" class="styled-image" alt="Machine Image">
+                    </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 wow animate__animated animate__backInRight">
                     <!--<h2 class="text-white fw-bold">Hello, I am <span style="color: rgb(198, 52, 73);">Jay Tailor</span>
@@ -119,27 +117,55 @@
     <!--skill section start-->
 
     <br>
-    <h1 class="exp" style="text-align: center;"><u>Skills</u></h1>
-    <section id="Skills" class="Skills-section my-5">
-        <div class="slider-container">
-            <div class="slider-track">
-                <!-- Repeat once more for seamless loop -->
-                <div class="slide"><img src="image/AutoCAD.jpg" alt="AutoCAD"></div>
-                <div class="slide"><img src="image/Cura.jpg" alt="Cura"></div>
-                <div class="slide"><img src="image/HAP.jpg" alt="HAP"></div>
-                <div class="slide"><img src="image/magix.jpg" alt="Magix"></div>
-                <div class="slide"><img src="image/McQuay.jpg" alt="McQuay"></div>
-                <div class="slide"><img src="image/msoffice.jpg" alt="MS Office"></div>
-                <div class="slide"><img src="image/Solidworks.jpg" alt="Solidworks"></div>
+    <h1 class="exp text-center"><u>Skills</u></h1>
+    <section id="Skills" class="Skills-section">
+        <div class="skill-slider">
+            <div class="skill-track">
+                <!-- Duplicated image sequence for smooth infinite scroll -->
+                <div class="skill-item"><img src="image/AutoCAD.jpg" alt="AutoCAD">
+                    <p>AutoCAD</p>
+                </div>
+                <div class="skill-item"><img src="image/Cura.jpg" alt="Cura">
+                    <p>Cura</p>
+                </div>
+                <div class="skill-item"><img src="image/HAP.jpg" alt="HAP">
+                    <p>HAP</p>
+                </div>
+                <div class="skill-item"><img src="image/magix.jpg" alt="Magix">
+                    <p>Magix</p>
+                </div>
+                <div class="skill-item"><img src="image/McQuay.jpg" alt="McQuay">
+                    <p>McQuay</p>
+                </div>
+                <div class="skill-item"><img src="image/msoffice.jpg" alt="MS Office">
+                    <p>MS Office</p>
+                </div>
+                <div class="skill-item"><img src="image/Solidworks.jpg" alt="Solidworks">
+                    <p>Solidworks</p>
+                </div>
 
-                <!-- Duplicate for continuous loop -->
-                <div class="slide"><img src="image/AutoCAD.jpg" alt="AutoCAD"></div>
-                <div class="slide"><img src="image/Cura.jpg" alt="Cura"></div>
-                <div class="slide"><img src="image/HAP.jpg" alt="HAP"></div>
-                <div class="slide"><img src="image/magix.jpg" alt="Magix"></div>
-                <div class="slide"><img src="image/McQuay.jpg" alt="McQuay"></div>
-                <div class="slide"><img src="image/msoffice.jpg" alt="MS Office"></div>
-                <div class="slide"><img src="image/Solidworks.jpg" alt="Solidworks"></div>
+                <!-- Repeat to ensure seamless loop -->
+                <div class="skill-item"><img src="image/AutoCAD.jpg" alt="AutoCAD">
+                    <p>AutoCAD</p>
+                </div>
+                <div class="skill-item"><img src="image/Cura.jpg" alt="Cura">
+                    <p>Cura</p>
+                </div>
+                <div class="skill-item"><img src="image/HAP.jpg" alt="HAP">
+                    <p>HAP</p>
+                </div>
+                <div class="skill-item"><img src="image/magix.jpg" alt="Magix">
+                    <p>Magix</p>
+                </div>
+                <div class="skill-item"><img src="image/McQuay.jpg" alt="McQuay">
+                    <p>McQuay</p>
+                </div>
+                <div class="skill-item"><img src="image/msoffice.jpg" alt="MS Office">
+                    <p>MS Office</p>
+                </div>
+                <div class="skill-item"><img src="image/Solidworks.jpg" alt="Solidworks">
+                    <p>Solidworks</p>
+                </div>
             </div>
         </div>
     </section>
@@ -153,15 +179,25 @@
 
     <!--Project section start-->
 
-    <br>
     <h1 class="exp" style="text-align: center;"><u>Projects</u></h1>
     <section id="Projects" class="projects-section">
-        <div class="project-card"><img src="image/1-temp.jpg" alt="Project 1"></div>
-        <div class="project-card"><img src="image/2-temp.jpg" alt="Project 2"></div>
-        <div class="project-card"><img src="image/3-temp.jpg" alt="Project 3"></div>
-        <div class="project-card"><img src="image/4-temp.jpg" alt="Project 4"></div>
-        <div class="project-card"><img src="image/5-temp.jpg" alt="Project 5"></div>
+        <div class="project-card">
+            <img src="image/1-temp.jpg" alt="Project 1">
+        </div>
+        <div class="project-card">
+            <img src="image/2-temp.jpg" alt="Project 2">
+        </div>
+        <div class="project-card">
+            <img src="image/3-temp.jpg" alt="Project 3">
+        </div>
+        <div class="project-card">
+            <img src="image/4-temp.jpg" alt="Project 4">
+        </div>
+        <div class="project-card">
+            <img src="image/5-temp.jpg" alt="Project 5">
+        </div>
     </section>
+
 
 
 
@@ -267,6 +303,8 @@
     <script src="js/wow/WOW.js"></script>
     <script>new WOW().init();</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 
 </html>
